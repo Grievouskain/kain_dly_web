@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>kain_dly | 大学受験英単語</title>
+<meta name="description" content="大学受験向け英単語学習アプリ kain_dly">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📘</text></svg>">
+<style>
+:root{--navy:#163A70;--blue:#2878E5;--bg:#F5F7FB;--card:#fff;--ok:#16834A;--ng:#D64545;--tx:#202938;--sub:#68758A;--bd:#DDE3EE;--okbg:#E6F4EC;--ngbg:#FBE9E9;--hd:#163A70;--btn:#163A70;color-scheme:light dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--navy:#8FB4EE;--bg:#0F1624;--card:#182236;--tx:#E6EBF5;--sub:#9AA7BD;--bd:#2A3752;--okbg:#12301F;--ngbg:#3A1B1D;--ok:#4CC380;--ng:#F07A7A;--hd:#10203A;--btn:#2878E5}}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--tx);font-family:"Hiragino Sans","Yu Gothic UI","Noto Sans JP",system-ui,sans-serif;line-height:1.7;font-size:16px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--hd);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:12px 24px}
+header b{font-size:20px;letter-spacing:.02em}header a{color:#fff;text-decoration:none;font-size:14px}
+.wrap{display:grid;grid-template-columns:200px 1fr;max-width:1400px;margin:0 auto}
+aside{padding:24px 16px;position:sticky;top:56px;align-self:start}
+aside a{display:block;padding:10px 16px;margin-bottom:4px;border-radius:8px;color:var(--tx);text-decoration:none}
+aside a.on{background:var(--card);color:var(--navy);font-weight:700;border:1px solid var(--bd)}
+main{padding:24px;max-width:1200px;width:100%;min-height:80vh}
+.mn{display:none}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:24px;margin-bottom:16px}
+h1{font-size:24px;color:var(--navy);margin:0 0 16px}h2{font-size:17px;color:var(--navy);margin:0 0 8px}
+.sub{color:var(--sub);font-size:14px}.row{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;text-align:center}
+.big{font-size:32px;font-weight:700;color:var(--navy)}
+button,.btn{font:inherit;cursor:pointer;border:0;border-radius:8px;padding:12px 20px;background:var(--btn);color:#fff;font-weight:700;min-height:48px}
+button.w{width:100%}button.o{background:transparent;color:var(--navy);border:1px solid var(--navy)}button.d{background:transparent;color:var(--ng);border:1px solid var(--ng)}
+button:disabled{opacity:.4;cursor:not-allowed}
+button:focus-visible,input:focus-visible,select:focus-visible,.ch:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.pb{height:8px;background:var(--bd);border-radius:4px;overflow:hidden;margin:8px 0}.pb i{display:block;height:100%;background:var(--blue)}
+.q{text-align:center;font-size:30px;font-weight:700;color:var(--navy);margin:24px 0}
+.ch{display:block;width:100%;text-align:left;background:var(--card);color:var(--tx);border:2px solid var(--bd);margin-bottom:8px;font-weight:500;font-size:17px}
+.ch.sel{border-color:var(--blue);background:color-mix(in srgb,var(--blue) 12%,var(--card))}
+.it{border:2px solid var(--bd);border-radius:8px;padding:12px 16px;margin-bottom:8px}
+.it.c{border-color:var(--ok);background:var(--okbg)}.it.m{border-color:var(--ng);background:var(--ngbg)}
+.tag{font-size:13px;font-weight:700;margin-left:8px}.ban{font-size:22px;font-weight:700;margin-bottom:8px}.ban.ok{color:var(--ok)}.ban.ng{color:var(--ng)}
+input[type=text],select{font:inherit;width:100%;padding:12px;border:2px solid var(--bd);border-radius:8px;background:var(--card);color:var(--tx);min-height:48px}
+label.opt{display:block;padding:6px 0}
+table{width:100%;border-collapse:collapse}td,th{padding:10px 8px;border-bottom:1px solid var(--bd);text-align:left}
+.bars{display:flex;gap:8px;align-items:flex-end;height:120px}.bars div{flex:1;text-align:center;font-size:12px}.bars i{display:block;background:var(--blue);border-radius:4px 4px 0 0;min-height:2px}
+.wk{display:flex;gap:8px}.wk span{flex:1;text-align:center;padding:6px 0;border-radius:8px;border:1px solid var(--bd);font-size:13px}.wk .y{background:var(--blue);color:#fff;border-color:var(--blue)}
+@media(max-width:760px){.wrap{display:block}aside{display:none}main{padding:16px 16px 96px}header{padding:12px 16px}.g2{grid-template-columns:1fr}.g3 .big{font-size:24px}
+.mn{display:flex;position:fixed;bottom:0;left:0;right:0;background:var(--card);border-top:1px solid var(--bd);padding-bottom:env(safe-area-inset-bottom,0px);z-index:5}
+.mn a{flex:1;text-align:center;padding:12px 0;color:var(--sub);text-decoration:none;font-size:13px}.mn a.on{color:var(--navy);font-weight:700}}
+</style></head><body>
+<header><b>kain_dly</b><a href="#/settings">設定</a></header>
+<noscript><p style="padding:16px">このアプリの利用にはJavaScriptを有効にしてください。</p></noscript>
+<div class="wrap"><aside id="sn"></aside><main id="m"></main></div><nav class="mn" id="mn"></nav>
+<script>
+const W=[["important","重要な、大切な","形容詞","This is an important issue.","これは重要な問題です。",1],["import","輸入する、取り込む","動詞","Japan imports oil.","日本は石油を輸入している。",2],["impress","感銘を与える、印象づける","動詞","Her speech impressed us.","彼女のスピーチは私たちに感銘を与えた。",2],["importance","重要性","名詞","Never forget the importance of sleep.","睡眠の重要性を忘れてはいけない。",2],["consequence","結果、帰結","名詞","Every action has a consequence.","どの行動にも結果が伴う。",3],["cause","原因、理由","名詞","What was the cause of the fire?","火事の原因は何でしたか。",1],["opportunity","機会、好機","名詞","Take every opportunity to practice.","あらゆる機会を練習に使いなさい。",2],["proposal","提案、申し出","名詞","They accepted my proposal.","彼らは私の提案を受け入れた。",3],["abandon","捨てる、放棄する","動詞","They abandoned the plan.","彼らは計画を放棄した。",3],["analyze","分析する","動詞","We analyzed the data.","私たちはデータを分析した。",3],["sufficient","十分な","形容詞","Is this amount sufficient?","この量で十分ですか。",3],["essential","不可欠な、本質的な","形容詞","Water is essential to life.","水は生命に不可欠だ。",2],["achieve","達成する","動詞","She achieved her goal.","彼女は目標を達成した。",2],["adequate","適切な、十分な","形容詞","The food was adequate.","食べ物は十分だった。",3],["ambiguous","あいまいな","形容詞","His answer was ambiguous.","彼の答えはあいまいだった。",4],["reluctant","気が進まない","形容詞","He was reluctant to go.","彼は行くのを渋った。",4],["inevitable","避けられない","形容詞","Change is inevitable.","変化は避けられない。",4],["conclude","結論づける、終える","動詞","We concluded that he was right.","私たちは彼が正しいと結論づけた。",2],["environment","環境","名詞","We must protect the environment.","私たちは環境を守らなければならない。",1],["society","社会","名詞","Society is changing fast.","社会は急速に変化している。",1],["improve","改善する、向上させる","動詞","I want to improve my English.","英語を上達させたい。",1],["decrease","減少する","動詞","Sales decreased last year.","昨年、売上は減少した。",2],["increase","増加する","動詞","Prices increase every year.","物価は毎年上がる。",1],["recognize","認識する、見分ける","動詞","I recognized her voice.","彼女の声だと分かった。",2],["hesitate","ためらう","動詞","Do not hesitate to ask.","遠慮なく質問して。",3],["obvious","明らかな","形容詞","The answer is obvious.","答えは明らかだ。",2],["maintain","維持する、主張する","動詞","They maintain a high standard.","彼らは高い水準を維持している。",3],["inhabit","住んでいる","動詞","Many birds inhabit the island.","多くの鳥がその島に生息している。",4],["scarce","乏しい、不足した","形容詞","Water is scarce here.","ここでは水が乏しい。",4],["contribute","貢献する、寄付する","動詞","He contributed to the project.","彼はその計画に貢献した。",3]];
+const TN={je:'日→英選択',ej:'英→日選択'},UN=['未設定（標準レベルで学習）','東京大学','京都大学','大阪大学','東北大学','早稲田大学','慶應義塾大学','その他の大学'],LV=['','基礎','標準','応用','難関'];
+const $=s=>document.querySelector(s),e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let D=null;try{D=JSON.parse(localStorage.getItem('kd'))}catch(_){}
+D=D||{set:{uni:0,level:2,types:['je','ej'],n:15},rv:{},log:[],fav:[],S:null,imp:[]};
+D.imp=D.imp||[];D.set.types=D.set.types.filter(t=>t!='w');if(!D.set.types.length)D.set.types=['je','ej'];
+if(D.S&&D.S.qs.some(q=>q.t=='w'))D.S=null;
+const PK={1:`accept|受け入れる|動;add|加える|動;agree|同意する|動;allow|許す|動;angry|怒った|形;arrive|到着する|動;ask|尋ねる|動;believe|信じる|動;borrow|借りる|動;bring|持ってくる|動;build|建てる|動;busy|忙しい|形;careful|注意深い|形;carry|運ぶ|動;catch|捕まえる|動;choose|選ぶ|動;clean|きれいな|形;clear|明らかな、澄んだ|形;close|閉じる|動;collect|集める|動;compare|比較する|動;country|国|名;culture|文化|名;danger|危険|名;decide|決める|動;difficult|難しい|形;discover|発見する|動;early|早い|形;easy|簡単な|形;enjoy|楽しむ|動;enough|十分な|形;every|すべての|形;exercise|運動|名;expensive|高価な|形;explain|説明する|動;famous|有名な|形;fast|速い|形;finish|終える|動;follow|従う、ついていく|動;forget|忘れる|動;future|未来|名;grow|成長する、育てる|動;happen|起こる|動;health|健康|名;help|助ける|動;history|歴史|名;hope|望む|動;idea|考え|名;invite|招待する|動;join|参加する|動;keep|保つ|動;knowledge|知識|名;language|言語|名;learn|学ぶ|動;leave|去る、残す|動;lend|貸す|動;lose|失う|動;meet|会う|動;mistake|間違い|名;modern|現代の|形;move|動く、動かす|動;necessary|必要な|形;notice|気づく|動;offer|申し出る|動;often|しばしば|副;order|命令、注文|名;pay|支払う|動;person|人|名;plan|計画|名;possible|可能な|形;prepare|準備する|動;protect|守る|動;provide|提供する|動;quiet|静かな|形;reason|理由|名;remember|思い出す|動;repeat|繰り返す|動;return|戻る|動`,
+2:`abroad|海外へ|副;absorb|吸収する|動;access|接近、利用|名;accident|事故|名;accordingly|それに応じて|副;active|活発な|形;actually|実際は|副;adapt|適応する|動;admit|認める|動;advance|進歩、前進|名;advantage|利点|名;affect|影響を及ぼす|動;ancient|古代の|形;appear|現れる|動;apply|申し込む、当てはまる|動;approach|近づく、取り組み|動;arrange|手配する、整える|動;attempt|試みる|動;attitude|態度|名;audience|聴衆|名;average|平均|名;avoid|避ける|動;aware|気づいて|形;benefit|利益|名;boundary|境界|名;ability|能力|名;century|世紀|名;challenge|挑戦|名;charge|請求する、料金|動;climate|気候|名;combine|結びつける|動;community|地域社会|名;complain|不満を言う|動;complex|複雑な|形;concentrate|集中する|動;concern|心配、関係する|名;confident|自信がある|形;consider|よく考える|動;consume|消費する|動;content|内容|名;convenient|便利な|形;create|創造する|動;crowd|群衆|名;current|現在の|形;damage|損害|名;definitely|確実に|副;deliver|配達する|動;depend|頼る|動;describe|描写する|動;design|設計する|動;detail|詳細|名;develop|発達させる|動;device|装置|名;disaster|災害|名;distance|距離|名;effect|効果、影響|名;effort|努力|名;emerge|現れる|動;emotion|感情|名;encourage|励ます|動;energy|エネルギー|名;estimate|見積もる|動;evidence|証拠|名;expand|拡大する|動;expect|予期する|動;experience|経験|名;failure|失敗|名;feature|特徴|名;figure|数字、人物|名;focus|焦点を合わせる|動;force|力、強いる|名;generation|世代|名;indeed|実に|副;influence|影響|名`,
+3:`accumulate|蓄積する|動;acknowledge|認める|動;acquire|獲得する|動;adjust|調整する|動;administer|管理する|動;advocate|擁護する|動;aggressive|攻撃的な|形;allocate|割り当てる|動;alter|変える|動;alternative|代わりの|形;anticipate|予想する|動;apparent|明白な|形;appreciate|感謝する、真価を認める|動;arbitrary|任意の、気まぐれな|形;assert|主張する|動;assess|評価する|動;assume|仮定する|動;attribute|〜のせいにする|動;bias|偏見|名;capacity|容量、能力|名;cease|やめる|動;circumstance|状況|名;clarify|明確にする|動;coincide|同時に起こる|動;collapse|崩壊する|動;commit|委ねる、犯す|動;compensate|補償する|動;compile|編集する|動;comprehensive|包括的な|形;conceive|思いつく|動;conduct|行う|動;confirm|確認する|動;conflict|衝突|名;consistent|一貫した|形;constitute|構成する|動;constrain|制約する|動;contemporary|現代の|形;controversy|論争|名;convey|伝える|動;crucial|極めて重要な|形;deny|否定する|動;derive|由来する|動;deteriorate|悪化する|動;diminish|減少させる|動;discriminate|差別する、区別する|動;dispose|処分する|動;distinct|明確に異なる|形;diverse|多様な|形;domestic|国内の、家庭の|形;dominant|支配的な|形;elaborate|入念な|形;eliminate|取り除く|動;enforce|施行する|動;enhance|高める|動;ensure|確実にする|動;exceed|超える|動;exclude|除外する|動;exhibit|展示する|動;exploit|利用する、搾取する|動;fundamental|基本的な|形;hypothesis|仮説|名;identify|特定する|動;implement|実行する|動;imply|ほのめかす|動;inherent|固有の|形;initiate|開始する|動;integrate|統合する|動;interpret|解釈する|動`,
+4:`abstain|控える|動;abundant|豊富な|形;acute|鋭い、急性の|形;ambivalent|相反する感情を持つ|形;ameliorate|改善する|動;analogous|類似した|形;antagonize|敵対させる|動;arduous|骨の折れる|形;articulate|明確に述べる|動;ascertain|確かめる|動;assimilate|同化する|動;audacious|大胆な|形;austere|厳格な、質素な|形;benevolent|慈悲深い|形;bolster|支える、強化する|動;candid|率直な|形;circumvent|回避する|動;coherent|筋の通った|形;compelling|説得力のある|形;complacent|自己満足した|形;concede|認める、譲歩する|動;condone|大目に見る|動;conspicuous|目立つ|形;contend|主張する、争う|動;contradict|矛盾する|動;convoluted|入り組んだ|形;cumulative|累積的な|形;curtail|削減する|動;daunting|ひるませるような|形;debilitate|衰弱させる|動;deplete|使い果たす|動;detrimental|有害な|形;discrepancy|食い違い|名;disparity|格差|名;dissipate|消散する|動;eccentric|風変わりな|形;eloquent|雄弁な|形;elusive|とらえどころのない|形;emulate|見習う、張り合う|動;endeavor|努力する|動;ephemeral|はかない|形;equivocal|曖昧な|形;exacerbate|悪化させる|動;exemplify|例証する|動;exonerate|無罪にする|動;fastidious|気難しい|形;feasible|実現可能な|形;fluctuate|変動する|動;formidable|手ごわい|形;frugal|倹約な|形;futile|無駄な|形;gregarious|社交的な|形;hinder|妨げる|動;impede|妨げる|動;implicit|暗黙の|形;incentive|動機、報奨|名;indigenous|土着の|形;inherit|相続する|動;innate|生まれつきの|形;intricate|複雑な|形;lucid|明快な|形;meticulous|細心の|形;mitigate|和らげる|動;mundane|平凡な|形;notorious|悪名高い|形;obsolete|時代遅れの|形;ostensible|表向きの|形;paramount|最重要の|形;pervasive|広がる、浸透した|形;pragmatic|実用的な|形;prudent|慎重な|形;ubiquitous|至る所にある|形`};
+{const h=new Set(W.map(w=>w[0])),P={動:'動詞',名:'名詞',形:'形容詞',副:'副詞'};for(const l in PK)PK[l].split(';').forEach(s=>{const[a,b,c]=s.trim().split('|');if(a&&!h.has(a)){h.add(a);W.push([a,b,P[c]||c,'','',+l])}})}
+const BASE=W.length;W.push(...D.imp);
+const save=()=>{try{localStorage.setItem('kd',JSON.stringify(D))}catch(_){}};
+const day=k=>new Date(Date.now()-k*864e5).toLocaleDateString('sv'),today=()=>day(0);
+const shuf=a=>a.map(x=>[Math.random(),x]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
+const pct=(a,b)=>b?Math.round(a/b*100):0;
+let sel=null;
+function start(kind,ids){
+ const st=D.set,all=W.map((_,i)=>i);let list;
+ if(ids)list=ids;else{
+  let lv=all.filter(i=>Math.abs(W[i][5]-st.level)<=1);if(lv.length<12)lv=all;
+  const due=shuf(Object.keys(D.rv).filter(k=>D.rv[k].status=='復習中').map(Number)).slice(0,Math.round(st.n/3));
+  const seen=new Set(D.log.map(l=>l.w));
+  const fresh=shuf(lv.filter(i=>!due.includes(i))).sort((a,b)=>seen.has(a)-seen.has(b));
+  list=due.concat(fresh.slice(0,st.n-due.length));
+ }
+ const ty=st.types.length?st.types:['je'];
+ D.S={kind,fb:null,qs:shuf(list).map((w,i)=>{const t=ty[i%ty.length],q={w,t,done:false};
+  if(t!='w')q.c=shuf([w,...shuf(all.filter(x=>x!=w&&W[x][1]!=W[w][1])).slice(0,3)]);return q})};
+ save();location.hash='#/study';r();
+}
+function pick(i){sel=i;r(1)}
+function ans(){
+ const S=D.S,i=S.qs.findIndex(q=>!q.done),q=S.qs[i];let v=sel;
+ if(q.t=='w'){v=$('#wi').value.trim();if(!v)return}else if(v==null)return;
+ const ok=q.t=='w'?v.toLowerCase()==W[q.w][0].toLowerCase():q.c[v]==q.w;
+ Object.assign(q,{done:true,ok,a:v});S.fb=i;
+ D.log.push({d:today(),t:q.t,ok,w:q.w,dl:S.kind=='daily'});
+ const rv=D.rv[q.w];
+ if(!ok)D.rv[q.w]={n:(rv?rv.n:0)+1,s:0,status:'復習中'};
+ else if(rv&&rv.status=='復習中'&&++rv.s>=2)rv.status='習得済み';
+ save();r();
+}
+function next(){D.S.fb=null;save();location.hash=D.S.qs.some(q=>!q.done)?'#/study':'#/result';r()}
+function home(){
+ const n=D.set.n,dn=D.log.filter(l=>l.d==today()&&l.dl).length,rc=Object.values(D.rv).filter(x=>x.status=='復習中').length;
+ const open=D.S&&D.S.qs.some(q=>!q.done);
+ const wk=[6,5,4,3,2,1,0].map(k=>`<span class="${D.log.some(l=>l.d==day(k))?'y':''}">${'日月火水木金土'[new Date(day(k)+'T00:00').getDay()]}</span>`).join('');
+ return `<h1>ホーム</h1><p class="sub">志望大学：${e(UN[D.set.uni])}　目標レベル：${LV[D.set.level]}</p>
+ <div class="card"><h2>今日の学習</h2><div class="big">${Math.min(dn,n)} / ${n} 問</div><div class="pb"><i style="width:${Math.min(100,pct(dn,n))}%"></i></div>
+ <p class="sub">完了率 ${Math.min(100,pct(dn,n))}%${dn>=n?'　今日の'+n+'問は完了しました':''}</p>
+ ${open?'<button class="w" onclick="location.hash=\'#/study\'">続きから再開する</button>':`<button class="w" onclick="start('daily')">${dn>=n?'もう一度学習する':'今日の'+n+'問を始める'}</button>`}</div>
+ <div class="g2"><div class="card"><h2>復習リスト</h2><div class="big">${rc}語</div><p class="sub">未復習</p><button class="o" onclick="location.hash='#/review'">開く</button></div>
+ <div class="card"><h2>学習履歴</h2><div class="big">${D.log.length}問</div><p class="sub">累計解答数</p><button class="o" onclick="location.hash='#/history'">開く</button></div></div>
+ <div class="card"><h2>今週の学習状況</h2><div class="wk">${wk}</div></div>`;
+}
+function settings(){
+ const s=D.set,nv=Math.round(s.n/3);
+ return `<h1>学習設定</h1><div class="card"><h2>志望大学</h2><select id="su">${UN.map((u,i)=>`<option value="${i}" ${i==s.uni?'selected':''}>${u}</option>`).join('')}</select>
+ <p class="sub">大学別データは準備中のため、現在は目標レベルのみ出題に反映されます。</p>
+ <h2>目標レベル</h2>${[1,2,3,4].map(l=>`<label class="opt"><input type="radio" name="lv" value="${l}" ${l==s.level?'checked':''}> ${LV[l]}</label>`).join('')}
+ <h2>出題形式（複数選択可）</h2>${Object.keys(TN).map(t=>`<label class="opt"><input type="checkbox" class="ty" value="${t}" ${s.types.includes(t)?'checked':''}> ${TN[t]}</label>`).join('')}
+ <h2>1日の問題数</h2><select id="sn2">${[10,15,20].map(n=>`<option value="${n}" ${n==s.n?'selected':''}>${n} 問</option>`).join('')}</select>
+ <p class="sub">出題構成の目安：新出単語 ${s.n-nv}問 / 復習 ${nv}問（復習が不足する場合は新出単語で補います）</p>
+ <button class="w" onclick="saveSet()">設定を保存</button><p id="sm" class="sub"></p></div>`;
+}
+function saveSet(){
+ const ty=[...document.querySelectorAll('.ty:checked')].map(x=>x.value);
+ if(!ty.length){$('#sm').textContent='問題形式を1つ以上選んでください。';return}
+ D.set={uni:+$('#su').value,level:+document.querySelector('[name=lv]:checked').value,types:ty,n:+$('#sn2').value};
+ save();$('#sm').textContent='設定を保存しました。';
+}
+function study(){
+ const S=D.S;
+ if(!S)return `<h1>学習</h1><div class="card"><p>進行中の学習はありません。</p><button class="w" onclick="start('daily')">今日の${D.set.n}問を始める</button></div>`;
+ const i=S.fb!=null?S.fb:S.qs.findIndex(q=>!q.done);
+ if(i<0){setTimeout(()=>location.hash='#/result');return''}
+ const q=S.qs[i],w=W[q.w],tot=S.qs.length,last=!S.qs.some(x=>!x.done);
+ const hd=`<div class="row"><b>${S.kind=='daily'?'学習中':'復習中'}</b><span>${i+1} / ${tot} 問</span></div><div class="pb"><i style="width:${(i+(q.done?1:0))/tot*100}%"></i></div><p class="sub">${TN[q.t]}問題</p>`;
+ const label=x=>q.t=='je'?W[x][0]:W[x][1];
+ if(!q.done){
+  const p=q.t=='ej'?w[0]:w[1];
+  const ins=q.t=='je'?'次の日本語に対応する英単語を選びなさい。':q.t=='ej'?'次の英単語の意味を選びなさい。':'次の日本語に対応する英単語を入力しなさい。';
+  const body=q.t=='w'?`<input type="text" id="wi" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="英単語を入力" onkeydown="if(event.key=='Enter')ans()">`
+   :q.c.map((x,k)=>`<button class="ch ${sel===k?'sel':''}" onclick="pick(${k})">${'ABCD'[k]}. ${e(label(x))}</button>`).join('');
+  return `<div class="card">${hd}<p>${ins}</p><div class="q">${e(p)}</div>${body}<button class="w" style="margin-top:8px" onclick="ans()" ${q.t!='w'&&sel==null?'disabled':''}>解答する</button></div>`;
+ }
+ const ban=q.ok?'<div class="ban ok">✓ 正解！</div>':'<div class="ban ng">✗ 不正解</div>';
+ let det;
+ if(q.t=='w')det=`<p>あなたの回答：${e(q.a)}</p><div class="it c"><b>${w[0]}</b>【正解】<br>${w[1]}（${w[2]}）</div>`;
+ else det=`<p>問題：${e(q.t=='je'?w[1]:w[0])}<br>あなたの回答：${'ABCD'[q.a]}. ${e(label(q.c[q.a]))}</p><h2>すべての選択肢と意味</h2>`+
+  q.c.map((x,k)=>`<div class="it ${x==q.w?'c':k==q.a?'m':''}"><b>${'ABCD'[k]}. ${W[x][0]}</b>${x==q.w?'<span class="tag" style="color:var(--ok)">【正解】</span>':k==q.a?'<span class="tag" style="color:var(--ng)">【あなたの回答】</span>':''}<br>${W[x][1]}</div>`).join('');
+ return `<div class="card">${hd}${ban}${det}<h2>解説</h2><p>${w[0]} は「${w[1]}」を意味する${w[2]}です。</p><p class="sub">${w[3]}<br>${w[4]}</p><button class="w" onclick="next()">${last?'結果を見る':'次の問題へ'}</button></div>`;
+}
+function result(){
+ const S=D.S;if(!S)return home();
+ const a=S.qs.filter(q=>q.done),c=a.filter(q=>q.ok).length,wr=a.filter(q=>!q.ok);
+ const by=Object.keys(TN).map(t=>{const x=a.filter(q=>q.t==t);return x.length?`<tr><td>${TN[t]}</td><td>${x.filter(q=>q.ok).length} / ${x.length}</td><td>${pct(x.filter(q=>q.ok).length,x.length)}%</td></tr>`:''}).join('');
+ return `<div class="card"><h1 style="text-align:center">学習結果</h1><div class="g3"><div><div class="big">${c}</div><span class="sub">正解数</span></div><div><div class="big">${a.length-c}</div><span class="sub">不正解数</span></div><div><div class="big">${pct(c,a.length)}%</div><span class="sub">正答率</span></div></div></div>
+ <div class="card"><h2>問題形式別の成績</h2><table>${by}</table></div>
+ <div class="card"><h2>間違えた単語</h2><p>${wr.length?wr.map(q=>W[q.w][0]).join(' / '):'ありません。よくできました！'}</p></div>
+ ${wr.length?`<button class="w" style="margin-bottom:8px" onclick="start('review',[${wr.map(q=>q.w)}])">間違えた単語を復習する</button>`:''}
+ <button class="w o" style="margin-bottom:8px" onclick="start('daily')">もう一度挑戦する</button><button class="w o" onclick="location.hash='#/home'">ホームへ戻る</button>`;
+}
+function review(){
+ const ids=Object.keys(D.rv).filter(k=>D.rv[k].status=='復習中');
+ const rows=ids.map(k=>`<tr><td><b>${W[k][0]}</b></td><td>${W[k][1]}</td><td>${D.rv[k].n}回</td><td style="white-space:nowrap"><button class="o" onclick="start('review',[${k}])">復習する</button> <button class="d" onclick="del(${k})">削除</button></td></tr>`).join('');
+ return `<h1>復習リスト　${ids.length}語</h1><div class="card">${ids.length?`<div style="overflow-x:auto"><table><tr><th>単語</th><th>意味</th><th>間違い</th><th></th></tr>${rows}</table></div><button class="w" style="margin-top:16px" onclick="start('review',[${ids.slice(0,20)}])">すべて復習する</button>`:'<p>復習する単語はありません。間違えた単語はここに自動で登録されます。</p>'}</div>`;
+}
+function del(k){if(confirm(W[k][0]+' を復習リストから削除しますか？')){delete D.rv[k];save();r()}}
+function history(){
+ const L=D.log,c=L.filter(l=>l.ok).length,ds=new Set(L.map(l=>l.d));
+ if(!L.length)return '<h1>学習履歴</h1><div class="card"><p>学習するとここに記録されます。</p></div>';
+ let k=ds.has(day(0))?0:1,st=0;while(ds.has(day(k))){st++;k++}
+ const bars=[6,5,4,3,2,1,0].map(k=>{const x=L.filter(l=>l.d==day(k)),p=pct(x.filter(l=>l.ok).length,x.length);return `<div><span>${x.length?p+'%':'-'}</span><i style="height:${p}px"></i>${day(k).slice(5)}</div>`}).join('');
+ const by=Object.keys(TN).map(t=>{const x=L.filter(l=>l.t==t);return x.length?`<tr><td>${TN[t]}</td><td>${x.filter(l=>l.ok).length} / ${x.length}</td><td>${pct(x.filter(l=>l.ok).length,x.length)}%</td></tr>`:''}).join('');
+ const wk={};L.filter(l=>!l.ok).forEach(l=>wk[l.w]=(wk[l.w]||0)+1);
+ const top=Object.entries(wk).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([w,n])=>`<tr><td><b>${W[w][0]}</b></td><td>${W[w][1]}</td><td>${n}回</td></tr>`).join('');
+ return `<h1>学習履歴</h1><div class="g3 card"><div><div class="big">${L.length}</div><span class="sub">累計解答数</span></div><div><div class="big">${pct(c,L.length)}%</div><span class="sub">累計正答率（正解${c}）</span></div><div><div class="big">${st}日</div><span class="sub">連続学習日数</span></div></div>
+ <div class="card"><h2>日ごとの正答率（直近7日）</h2><div class="bars">${bars}</div></div>
+ <div class="g2"><div class="card"><h2>問題形式ごとの正答率</h2><table>${by}</table></div><div class="card"><h2>苦手単語</h2><table>${top||'<tr><td>なし</td></tr>'}</table></div></div>`;
+}
+function vocab(){return `<h1>単語帳　全${W.length}語</h1><p class="sub">検索結果は先頭50件まで表示します。</p><div class="card"><input type="text" id="vs" placeholder="英単語・意味を検索" oninput="vl(this.value)"></div>${impCard()}<div id="vl">${vlh('')}</div>`}
+function vlh(q){q=q.toLowerCase();return W.map((w,i)=>({w,i})).filter(x=>!q||x.w[0].toLowerCase().includes(q)||x.w[1].includes(q)).slice(0,50).map(({w,i})=>`<div class="card"><h2>${w[0]}</h2><p>意味：${w[1]}<br>品詞：${w[2]}${w[3]?'<br>例文：'+w[3]+'<br>訳：'+w[4]:''}</p>
+ <button class="o" onclick="fav(${i})">${D.fav.includes(i)?'★ お気に入り済み':'☆ お気に入り'}</button> <button class="o" onclick="addRv(${i})">${D.rv[i]&&D.rv[i].status=='復習中'?'復習リストに登録済み':'復習リストに追加'}</button></div>`).join('')||'<div class="card">見つかりませんでした。</div>'}
+function vl(q){$('#vl').innerHTML=vlh(q)}
+function fav(i){const k=D.fav.indexOf(i);k<0?D.fav.push(i):D.fav.splice(k,1);save();vl($('#vs').value)}
+function addRv(i){if(!D.rv[i]||D.rv[i].status!='復習中')D.rv[i]={n:D.rv[i]?D.rv[i].n:0,s:0,status:'復習中'};save();vl($('#vs').value)}
+function impCard(){return `<div class="card"><h2>単語データのインポート</h2><p class="sub">お手持ちの単語リスト（CSV/TSV）を追加できます。1行に「英単語,意味,品詞,例文,例文訳,レベル(1〜4)」の順で入力してください。英単語と意味は必須で、同じ英単語は追加しません。</p><input type="file" id="if" accept=".csv,.tsv,.txt" onchange="fileImp(this)"><textarea id="it" rows="4" style="width:100%;margin:8px 0;font:inherit;padding:8px;border:2px solid var(--bd);border-radius:8px;background:var(--card);color:var(--tx)" placeholder="abandon,捨てる、放棄する,動詞,They abandoned the plan.,彼らは計画を放棄した。,3"></textarea><button class="w" onclick="doImp($('#it').value)">追加する</button><p id="im" class="sub">追加済み：${D.imp.length}語</p>${D.imp.length?'<button class="d" onclick="clrImp()">追加した単語をすべて削除</button>':''}</div>`}
+function cells(l){if(l.includes('\t'))return l.split('\t').map(x=>x.trim());const o=[];let c='',q=false;for(const ch of l){if(ch=='"')q=!q;else if(ch==','&&!q){o.push(c.trim());c=''}else c+=ch}o.push(c.trim());return o}
+function doImp(t){const have=new Set(W.map(w=>w[0].toLowerCase()));let n=0,sk=0;
+ t.split(/\r?\n/).forEach(l=>{if(!l.trim())return;const c=cells(l);if(!c[0]||!c[1]||/^(英単語|word)$/i.test(c[0])){sk++;return}
+  const k=c[0].toLowerCase();if(have.has(k)){sk++;return}have.add(k);
+  const w=[c[0],c[1],c[2]||'',c[3]||'',c[4]||'',Math.min(4,Math.max(1,parseInt(c[5])||2))];D.imp.push(w);W.push(w);n++});
+ save();r(1);$('#im').textContent=n+'語を追加しました（スキップ '+sk+'行）。合計 '+W.length+'語'}
+function fileImp(i){const f=i.files[0];if(f)f.text().then(doImp)}
+function clrImp(){if(!confirm('追加した単語と、それに関する学習記録を削除しますか？'))return;D.imp=[];W.length=BASE;Object.keys(D.rv).forEach(k=>{if(+k>=BASE)delete D.rv[k]});D.log=D.log.filter(l=>l.w<BASE);D.fav=D.fav.filter(i=>i<BASE);D.S=null;save();r()}
+const NAV=[['home','ホーム'],['study','学習'],['review','復習'],['history','履歴'],['vocab','単語帳']];
+function r(keep){
+ const h=location.hash.slice(2)||'home',R={home,settings,study,result,review,history,vocab};
+ const act=document.activeElement&&document.activeElement.id=='wi'?$('#wi').value:null;
+ $('#m').innerHTML=(R[h]||home)();
+ if(act!==null&&$('#wi'))$('#wi').value=act;
+ if($('#wi'))$('#wi').focus({preventScroll:true});
+ const a=NAV.map(([k,t])=>`<a href="#/${k}" class="${k==h?'on':''}">${t}</a>`).join('');
+ $('#sn').innerHTML=a+`<a href="#/settings" class="${h=='settings'?'on':''}">設定</a>`;$('#mn').innerHTML=a;
+ if(!keep)window.scrollTo(0,0);
+}
+addEventListener('hashchange',()=>r());r();
+</script></body></html>
